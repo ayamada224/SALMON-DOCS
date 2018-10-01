@@ -26,23 +26,19 @@ Input variables of SALMON
 &calculation
 ------------
 
-
 - **calc_mode** (character, 0d/3d)
    Choice of Calculation modes. ``'GS'``, ``'RTLR'``, ``'RTPulse'``, ``'GS_RTLR'``,
    and ``'GS_RTPulse'`` can be chosen.
-
 
 - **use_ms_maxwell** (character, 3d)
    Enable(``'y'``)/disable(``'n'``) 
    Multi-scale Maxwell-Kohn-Sham coupling. 
    Default is ``'n'`` 
 
-
 - **use_force** (character, 0d)
    Enable(``'y'``)/disable(``'n'``) 
    force calculation.
    Default is ``'n'``.
-
 
 - (Trial) **use_ehrenfest_md** (character, 0d/3d)
    Enable(``'y'``)/disable(``'n'``) 
@@ -63,7 +59,6 @@ Input variables of SALMON
 
 &control
 --------
-
 
 - **sysname** (character, 0d/3d)
    Name of calculation. This is used for a prefix of output files.
@@ -451,12 +446,12 @@ This option is incompatible with
 
 - **threshold_norm_rho** (real(8), 0d)
    Threshold for convergence check that is used when either ``'norm_rho'`` or ``'norm_rho_dng'`` is specified. ``threshold_norm_rho`` must be set when either ``'norm_rho'`` or ``'norm_rho_dng'`` is specified.
-   Default is ``-1d0`` a.u. (1 a.u.= 45.54è™©\ :sup:`-6`\)
+   Default is ``-1d0`` a.u. (1 a.u.= 45.54¬è¬™¬©\ :sup:`-6`\)
 
 
 - **threshold_norm_pot** (real(8), 0d)
    Threshold for convergence check that is used when either ``'norm_pot'`` or ``'norm_pot_dng'`` is specified. ``threshold_norm_pot`` must be set when either ``'norm_pot'`` or ``'norm_pot_dng'`` is specified.
-   Default is ``-1d0`` a.u. (1 a.u.= 33.72x10\ :sup:`4`\ è™©\ :sup:`-6`\eV\ :sup:`2`\)
+   Default is ``-1d0`` a.u. (1 a.u.= 33.72x10\ :sup:`4`\ ¬è¬™¬©\ :sup:`-6`\eV\ :sup:`2`\)
 
 - **omp_loop** (character, 3d)
    Loop for OpenMP parallelization if periodic boundary system is used. 
@@ -925,7 +920,7 @@ This option is incompatible with
 - (Trial) **hconv** (real(8), 0d)
    A convergence value for the Hartree-cg calculation. 
    The convergence is checked by ||tVh(i)-tVh(i-1)||\ :sup:`2`\/(number of grids).
-   Default is ``1d-15`` a.u. (= 1.10d-13 è™©\ :sup:`3`\eV\ :sup:`2`\)
+   Default is ``1d-15`` a.u. (= 1.10d-13 ¬è¬™¬©\ :sup:`3`\eV\ :sup:`2`\)
 
 - (Trial) **lmax_meo** (integer, 0d)
    A maximum angular momentum for multipole expansion in the Hartree-cg calculation. 
